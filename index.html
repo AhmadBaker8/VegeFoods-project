@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- swiper cdn -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container justify-content-around">
+            <a class="navbar-brand" href="#">VEGEFOODS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span>menu</span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-disabled="true" onclick="plusUnderline(0)">HOME</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SHOP
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a href="shop.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(1)">Shop</a>
+                            <a href="wishlist.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(2)">Wishlist</a>
+                            <a href="cart.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(3)">Cart</a>
+                            <a href="checkout.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(4)">Checkout</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(5)">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(6)">CONTACT</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a href="cart.html" class="nav-link " aria-disabled="true"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section1 swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="slider-show swiper-slide">
+                <div class="slide-img">
+                    <img src="./images/bg_1.jpg.webp" alt="">
+                </div>
+                <div class="sec1-description">
+                    <h1>We Serve fresh vegetables & fruits</h1>
+                    <h2>We deliver organic vegetables & fruits</h2>
+                    <a href="shop.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="slider-show swiper-slide">
+                <div class="slide-img">
+                    <img src="./images/bg_2.jpg.webp" alt="">
+                </div>
+                <div class="sec1-description">
+                    <h1>100% fresh & organic foods</h1>
+                    <h2>We deliver organic vegetables & fruits</h2>
+                    <a href="shop.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section section2">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-3 text-center d-flex flex-column align-items-center items">
+                    <div class="logo">
+                        <img src="./images/shipped.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="logo-des d-flex flex-column">
+                        <h3>FREE SHIPPING</h3>
+                        <span>ON ODER OVER 100%</span>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center d-flex flex-column align-items-center items">
+                    <div class="logo">
+                        <img src="./images/diet.png" alt="">
+                    </div>
+                    <div class="logo-des d-flex flex-column">
+                        <h3>ALWAYS FRESH</h3>
+                        <span>Product well package</span>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center d-flex flex-column align-items-center items">
+                    <div class="logo">
+                        <img src="./images/badge.png" alt="">
+                    </div>
+                    <div class="logo-des d-flex flex-column">
+                        <h3>Superior Quality</h3>
+                        <span>Quality Products</span>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center d-flex flex-column align-items-center items">
+                    <div class="logo">
+                        <img src="./images/customer-service.png" alt="">
+                    </div>
+                    <div class="logo-des d-flex flex-column">
+                        <h3>Support</h3>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 order-2 order-xl-1 d-flex flex-column gap-5">
+                    <div class="category">
+                        <div class="category-img">
+                            <img src="./images/category-1.jpg.webp" alt="">
+                            <div class="text">
+                                <h2><a >Vegetables</a></h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="category">
+                        <div class="category-img">
+                            <img src="./images/category-2.jpg.webp" alt="">
+                            <div class="text">
+                                <h2><a >Fruits</a></h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 order-1 order-xl-2 d-flex flex-column gap-5">
+                    <div class="category description d-flex flex-column gap-4 align-items-center">
+                        <h3>Vegetables</h3>
+                        <span>Protect the health of every home</span>
+                        <a href="shop.html" class="btn">Shop now</a>
+                    </div>
+                    <div class="category">
+                        <div class="category-img">
+                            <img src="./images/category.jpg.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 order-3 d-flex flex-column gap-5">
+                    <div class="category">
+                        <div class="category-img">
+                            <img src="./images/category-3.jpg.webp" alt="">
+                            <div class="text">
+                                <h2><a >Juices</a></h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="category">
+                        <div class="category-img">
+                            <img src="./images/category-4.jpg.webp" alt="">
+                            <div class="text">
+                                <h2><a >Dried</a></h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section4 d-flex flex-column gap-5">
+        <div class="container">
+            <div class="row gap-3">
+                <span class="text-center">Featured Products</span>
+                <h2 class="text-center">Our Products</h2>
+                <p class="text-center">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gap-5 justify-content-center">
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>BELL PEPPER</h3>
+                            <span class="fs-4">$5.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-2.jpg.webp" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>Strawberry</h3>
+                            <span class="fs-4">$6.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>GREEN BEANS</h3>
+                            <span class="fs-4">$2.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-4.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>PURPLE CABBAGE</h3>
+                            <span class="fs-4">$7.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-5.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>TOMATO</h3>
+                            <span class="fs-4">$3.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-6.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>BROCOLI</h3>
+                            <span class="fs-4">$4.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-7.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>CARROTS</h3>
+                            <span class="fs-4">$3.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+                <div class="products col-md-6 col-lg-3 border py-3">
+                    <div class="product d-flex flex-column gap-3">
+                        <div class="img-product">
+                            <img src="./images/product-8.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="title-product text-center">
+                            <h3>FRUIT JUICE</h3>
+                            <span class="fs-4">$1.00</span>
+                        </div>
+                    </div>
+                    <div class=" buttons d-flex justify-content-center gap-3">
+                        <a ><i class="fa-solid fa-heart"></i></a>
+                        <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a ><i class="fa-brands fa-buffer"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section5">
+        <div class="container d-flex justify-content-end">
+            <div class="col-md-12 col-lg-6 d-flex flex-column gap-3">
+                <span>Best Price For You</span>
+                <h2>Deal of the day</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <p>$10 <span>Now $5 only</span></p>
+                <a href="">Spinach</a>
+    
+                <div class="row count-down d-flex gap-3">
+                    <div class="time d-flex flex-column gap-3 col-2">
+                        <span id="days"></span>
+                        <span class="clock">Days</span>
+                    </div>
+                    <div class="time d-flex flex-column gap-3 col-2">
+                        <span id="hours"></span>
+                        <span class="clock">Hrs</span>
+                    </div>
+                    <div class="time d-flex flex-column gap-3 col-2">
+                        <span id="minutes"></span>
+                        <span class="clock">Mins</span>
+                    </div>
+                    <div class="time d-flex flex-column gap-3 col-2">
+                        <span id="seconds"></span>
+                        <span class="clock">Secs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section6">
+        <div class="container d-flex flex-column gap-5">
+            <div class="row justify-content-center">
+                <div class="col-8 text-center d-flex flex-column gap-3">
+                    <span>Testimony</span>
+                    <h2>Our satisfied customer says</h2>
+                    <p>Join thousands of happy customers enjoying fresh, quality produce every day!</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 d-flex flex-column mySwiper swiper">
+                    <div class="swiper-wrapper d-flex justify-content-around">
+                        <div class="cardd col-3 swiper-slide">
+                            <img src="./images/person_1.jpg.webp" alt="" class="img-fluid">
+                            <p class="description">The freshest produce I’ve ever ordered online! The vegetables and fruits taste amazing and are always delivered promptly. Vegefoods has become my go-to for healthy groceries!</p>
+                            <div class="title">
+                                <h3>Ameed Iyad</h3>
+                                <p>System Analyst</p>
+                            </div>
+                        </div>
+                        <div class="cardd col-3 swiper-slide">
+                            <img src="./images/person_1.jpg.webp" alt="" class="img-fluid">
+                            <p class="description">I’m so glad I discovered Vegefoods! The quality of the organic products is outstanding, and the customer service is exceptional. Highly recommend this site for anyone who values fresh, natural food.</p>
+                            <div class="title">
+                                <h3>Tareq Ibrahim</h3>
+                                <p>Health Coach</p>
+                            </div>
+                        </div>
+                        <div class="cardd col-3 swiper-slide">
+                            <img src="./images/person_1.jpg.webp" alt="" class="img-fluid">
+                            <p class="description">Vegefoods makes eating healthy so easy! The selection is fantastic, and everything always arrives in great condition. I love knowing I’m getting the best quality produce.</p>
+                            <div class="title">
+                                <h3>Mahmoud Zerie</h3>
+                                <p>Personal Trainer</p>
+                            </div>
+                        </div>
+                        <div class="cardd col-3 swiper-slide">
+                            <img src="./images/person_1.jpg.webp" alt="" class="img-fluid">
+                            <p class="description">I’ve tried other stores, but nothing compares to the freshness and taste of Vegefoods’ produce. Every delivery feels like it was just picked from the farm!</p>
+                            <div class="title">
+                                <h3>Amr Shalabi</h3>
+                                <p>Home Chef</p>
+                            </div>
+                        </div>
+                        <div class="cardd col-3 swiper-slide">
+                            <img src="./images/person_1.jpg.webp" alt="" class="img-fluid">
+                            <p class="description">The variety and quality are unmatched! Vegefoods has everything I need to keep my family healthy, and it’s so convenient to shop online.</p>
+                            <div class="title">
+                                <h3>Abood Zidan</h3>
+                                <p>Family Man</p>
+                            </div>
+                        </div>
+                        <div class="cardd col-3 swiper-slide">
+                            <img src="./images/person_1.jpg.webp" alt="" class="img-fluid">
+                            <p class="description">Fast delivery, fresh products, and incredible taste! Vegefoods has made it easy to keep my pantry stocked with healthy choices</p>
+                            <div class="title">
+                                <h3>Garreth Smith</h3>
+                                <p>Wellness Blogger</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section7">
+        <div class="sec7-des">
+            <div class="main-title">
+                <h2>Newsletter</h2>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email Address">
+                <a href="">SUBSCRIBE</a>
+            </div>
+            <p>Will be used in accordance with our Privacy policy</p>
+            <div class="social">
+                <a href="#####""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@ahmad_baker5" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/ahmad.baker.77128261" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/a7med._o/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/AhmadBaker8" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#####"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/ahmad-baker-b64b98269/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section8">
+        <div class="ttt">
+            <a href="#" class="to-top">
+                <i class="inside fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="footer">
+            <div class="help">
+                <span class="first">Help</span>
+                <span>Search</span>
+                <span>Help</span>
+                <span>Information</span>
+                <span>Privacy Policy</span>
+                <span>Shipping Details</span>
+            </div>
+            <div class="support">
+                <span class="first">Support</span>
+                <span>Contact Us</span>
+                <span>About Us</span>
+                <span>Careers</span>
+                <span> Refunds & Returns</span>
+                <span>Deliveries</span>
+            </div>
+            <div class="information">
+                <span class="first">Information</span>
+                <span>Search Terms</span>
+                <span>Advanced Search</span>
+                <span>Help & Faq's</span>
+                <span>Store Location</span>
+                <span>Orders & Returns</span>
+            </div>
+            <div class="address">
+                <span class="first">Address</span>
+                <span class="noPointer"><i class="fa-solid fa-house"></i> Palestine,WestBank,Jenin,kufiret</span>
+                <span class="noPointer"><i class="fa-solid fa-phone"></i> 0568178976</span>
+                <span><i class="fa-solid fa-message"></i> ahmadheeba11@gmail.com</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

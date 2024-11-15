@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- bootstrap cdn -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <!-- main css -->
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/wishlist.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container justify-content-around">
+            <a class="navbar-brand" href="#">VEGEFOODS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span>menu</span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(0)">HOME</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SHOP
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a href="shop.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(1)">Shop</a>
+                            <a href="#" class="nav-link active" aria-disabled="true" onclick="plusUnderline(2)">Wishlist</a>
+                            <a href="cart.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(3)">Cart</a>
+                            <a href="checkout.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(4)">Checkout</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(5)">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" aria-disabled="true" onclick="plusUnderline(6)">CONTACT</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a href="cart.html" class="nav-link " aria-disabled="true"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wishlist">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="title d-flex flex-column align-items-center">
+                    <p>
+                        <span><a href="index.html">HOME</a></span>
+                        <span>WISHLIST</span>
+                    </p>
+                    <h1>MY WISHLIST</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="products-list py-5 section">
+        <div class="container my-5">
+            <table class="table">
+                <thead class="table-header text-center">
+                    <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">Product List</th>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Add To Cart</th>
+                    </tr>
+                </thead>
+                <tbody class="wishlist-items text-center">
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                   </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    
+    <section class="section section7">
+        <div class="sec7-des">
+            <div class="main-title">
+                <h2>Newsletter</h2>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email Address">
+                <a href="">SUBSCRIBE</a>
+            </div>
+            <p>Will be used in accordance with our Privacy policy</p>
+            <div class="social">
+                <a href="#####""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@ahmad_baker5" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/ahmad.baker.77128261" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/a7med._o/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/AhmadBaker8" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#####"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/ahmad-baker-b64b98269/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section8">
+        <div class="ttt">
+            <a href="#" class="to-top">
+                <i class="inside fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="footer">
+            <div class="help">
+                <span class="first">Help</span>
+                <span>Search</span>
+                <span>Help</span>
+                <span>Information</span>
+                <span>Privacy Policy</span>
+                <span>Shipping Details</span>
+            </div>
+            <div class="support">
+                <span class="first">Support</span>
+                <span>Contact Us</span>
+                <span>About Us</span>
+                <span>Careers</span>
+                <span> Refunds & Returns</span>
+                <span>Deliveries</span>
+            </div>
+            <div class="information">
+                <span class="first">Information</span>
+                <span>Search Terms</span>
+                <span>Advanced Search</span>
+                <span>Help & Faq's</span>
+                <span>Store Location</span>
+                <span>Orders & Returns</span>
+            </div>
+            <div class="address">
+                <span class="first">Address</span>
+                <span class="noPointer"><i class="fa-solid fa-house"></i> Palestine,WestBank,Jenin,kufiret</span>
+                <span class="noPointer"><i class="fa-solid fa-phone"></i> 0568178976</span>
+                <span><i class="fa-solid fa-message"></i> ahmadheeba11@gmail.com</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="./js/wishlist.js"></script>
+</body>
+</html>
