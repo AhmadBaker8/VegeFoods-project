@@ -103,7 +103,7 @@ var swiper = new Swiper(".section6 .mySwiper", {
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
-    clickable: false,
+    clickable: true,
   },
   breakpoints:{
     320: {
