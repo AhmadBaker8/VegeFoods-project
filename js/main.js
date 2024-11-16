@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       }
   });
 }, {
-  threshold: 0.3 
+  threshold: 0.2 
 });
 const sections = document.querySelectorAll('.section');
 console.log(sections)
@@ -103,9 +103,9 @@ var swiper = new Swiper(".section6 .mySwiper", {
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: false,
   },
-  breakpoints: {
+  breakpoints:{
     320: {
       slidesPerView: 1,
       spaceBetween: 30,

@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
   }, {
-    threshold: 0.3 
+    threshold: 0.2 
   });
   const sections = document.querySelectorAll('.section');
   sections.forEach(section => {
@@ -63,6 +63,7 @@ const observer = new IntersectionObserver((entries, observer) => {
   document.addEventListener('DOMContentLoaded', async () => {
 
     let wishlist = JSON.parse(localStorage.getItem('favorites')) || [];
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const fav = document.querySelector('.wishlist-items');
     fav.innerHTML = '';
   
@@ -71,8 +72,9 @@ const observer = new IntersectionObserver((entries, observer) => {
       return;
     }
   
+    
     async function renderWishlist() {
-      fav.innerHTML = ''; // Clear existing items
+      fav.innerHTML = '';
       for (const productId of wishlist) {
         try {
           const product = await getProduct(productId);
@@ -88,7 +90,7 @@ const observer = new IntersectionObserver((entries, observer) => {
               <p>${product.description}</p>
             </td>
             <td>${product.price}$</td>
-            <td><a href="#" class="btn">ADD</a></td>
+            <td><a data-product-id="${productId}" class="btn add-to-cart">ADD</a></td>
           `;
   
           fav.appendChild(productRow);
@@ -100,8 +102,15 @@ const observer = new IntersectionObserver((entries, observer) => {
       document.querySelectorAll('.remove-icon').forEach(icon => {
         icon.addEventListener('click', removeFromWishlist);
       });
+
+      document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', addToCart);
+      });
     }
   
+
+
+
     function removeFromWishlist(event) {
       const productId = event.target.getAttribute('data-product-id');
       wishlist = wishlist.filter(id => Number(id) !== Number(productId));
@@ -113,6 +122,17 @@ const observer = new IntersectionObserver((entries, observer) => {
       }
     }
     await renderWishlist();
+
+    function addToCart(event) {
+      const productId = event.target.getAttribute('data-product-id');
+      console.log(productId);
+      if (!cart.includes(productId)) {
+        cart.push(productId);
+        localStorage.setItem('cart', JSON.stringify(cart));
+      } else {
+        alert("Product is already in the cart!");
+      }
+    }
   });
   
 

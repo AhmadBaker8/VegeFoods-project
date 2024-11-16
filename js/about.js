@@ -68,7 +68,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
   }, {
-    threshold: 0.3 
+    threshold: 0.2
   });
   const sections = document.querySelectorAll('.section');
   console.log(sections)

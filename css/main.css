@@ -341,6 +341,9 @@ section.visible {
 .section4 .products:hover a{
     opacity: 1;
 }
+.section4 .products:hover .fs-4{
+    opacity: 0;
+}
 
 /*section4*/
 
