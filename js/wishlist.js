@@ -130,7 +130,23 @@ const observer = new IntersectionObserver((entries, observer) => {
         cart.push(productId);
         localStorage.setItem('cart', JSON.stringify(cart));
       } else {
-        alert("Product is already in the cart!");
+        Swal.fire({
+          title: "Product is already in the cart!",
+          showClass: {
+            popup: `
+              animate__animated
+              animate__fadeInUp
+              animate__faster
+            `
+          },
+          hideClass: {
+            popup: `
+              animate__animated
+              animate__fadeOutDown
+              animate__faster
+            `
+          }
+        });
       }
     }
   });
